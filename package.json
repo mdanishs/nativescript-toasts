@@ -18,9 +18,10 @@
   },
   "keywords": [
     "toasts",
-    "notifications"
+    "notifications",
+    "nativescript"
   ],
-  "author": "M Danish Siddiqui",
+  "author": "M Danish Siddiqui <mohammaddsiddiqui@gmail.com> (http://mdanishs.github.io)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mdanishs/nativescript-toasts/issues"
