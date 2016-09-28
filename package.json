@@ -1,0 +1,23 @@
+{
+  "name": "nativescript-toasts",
+  "version": "1.0.0",
+  "description": "Provides common API to create toast notifications for android and ios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdanishs/nativescript-toasts.git"
+  },
+  "keywords": [
+    "toasts",
+    "notifications"
+  ],
+  "author": "M Danish Siddiqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdanishs/nativescript-toasts/issues"
+  },
+  "homepage": "https://github.com/mdanishs/nativescript-toasts#readme"
+}
