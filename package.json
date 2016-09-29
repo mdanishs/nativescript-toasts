@@ -1,6 +1,6 @@
 {
   "name": "nativescript-toasts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides common API to create toast notifications for android and iOS",
   "main": "index.js",
   "scripts": {
