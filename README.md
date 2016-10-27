@@ -21,3 +21,11 @@ nstoasts.show(options);
 #### This plugin uses third party libraries for iOS
 The plugin uses a pod created by Charles Scalesse to display toasts on iOS
 > https://cocoapods.org/pods/Toast
+
+### Typescript users
+```
+import * as Toast from 'nativescript-toasts';
+
+let toastOptions = {text: "Hello World", dutation: Toast.DURATION.SHORT};
+Toast.show(toastOptions);
+```
