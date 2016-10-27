@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Provides common API to create toast notifications for android and iOS",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
