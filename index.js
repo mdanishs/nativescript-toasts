@@ -16,7 +16,7 @@ exports.DURATION = DURATION;
 const POSITION = {
   TOP: 'top',
   BOTTOM: 'bottom',
-  MIDDLE: 'middle'
+  CENTER: 'center'
 }
 exports.POSITION = POSITION;
 
@@ -43,7 +43,7 @@ exports.show = function (toastObject) {
         case POSITION.TOP:
           position = "CSToastPositionTOP";
           break;
-        case POSITION.MIDDLE:
+        case POSITION.CENTER:
           position = "CSToastPositionCenter";
           break;
       }
@@ -54,12 +54,31 @@ exports.show = function (toastObject) {
     frameModule.topmost().ios.controller.view.makeToast(toastObject.text);
 
   } else if (app.android) {
+
     const Toast = android.widget.Toast;
     duration = Toast.LENGTH_SHORT;
     if (toastObject.duration === DURATION.LONG) {
       duration = Toast.LENGTH_LONG;
     }
 
-    Toast.makeText(app.android.context, toastObject.text, duration).show();
+    const Gravity = android.view.Gravity;
+
+    //set position if it is in the object
+    let position = Gravity.BOTTOM; //default position = bottom
+    
+    if (toastObject.position) {
+      switch (toastObject.position) {
+        case POSITION.TOP:
+          position = Gravity.TOP;
+          break;
+        case POSITION.CENTER:
+          position = Gravity.CENTER;
+          break;
+      }
+    }
+    console.log(position);
+    var toast = Toast.makeText(app.android.context, toastObject.text, duration);
+    toast.setGravity(position, 0, 0);
+    toast.show();
   }
 }
