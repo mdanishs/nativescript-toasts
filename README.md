@@ -12,7 +12,8 @@ This plugin provides a common API for android and iOS to show toast notification
 var nstoasts = require("nativescript-toasts");
 var options = {
 	text: "Hello World",
-    duration : nstoasts.DURATION.SHORT
+    duration : nstoasts.DURATION.SHORT,
+    position : nstoasts.POSITION.TOP //optional
 }
 nstoasts.show(options);
 ```
