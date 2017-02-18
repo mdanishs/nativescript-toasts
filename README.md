@@ -27,6 +27,10 @@ The plugin uses a pod created by Charles Scalesse to display toasts on iOS
 ```
 import * as Toast from 'nativescript-toasts';
 
-let toastOptions:Toast.ToastOptions = {text: "Hello World", dutation: Toast.DURATION.SHORT};
+let toastOptions:Toast.ToastOptions = {
+    text: "Hello World", 
+    duration: Toast.DURATION.SHORT,
+    position: Toast.POSITION.TOP //optional property
+};
 Toast.show(toastOptions);
 ```
