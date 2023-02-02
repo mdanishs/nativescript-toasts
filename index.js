@@ -1,5 +1,5 @@
-var app = require("application");
-var frameModule = require("ui/frame");
+var app = require('@nativescript/core/application');
+var frameModule = require('@nativescript/core/ui/frame');
 
 
 /**
